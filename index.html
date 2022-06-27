@@ -7,16 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0df059300d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar" id="navbar">
-            <h1>Myfortofolio</h1>
+            <h1 class="headingnav" style="color: white;">MyFortofolio</h1>
             <ul class="navmenu">
                 <li class="navitem"><a class="navlink" href="#halaman2">Tentang</a></li>
-                <li class="navitem"><a class="navlink" href="#halaman3">Fitur</a></li>
-                <li class="navitem"><a class="navlink" href="#testimoni">Komentar</a></li>
-                <li class="navitem"><a class="active" href="#myprofile">Kontak</a></li>
+                <li class="navitem"><a class="navlink" href="#halaman3">Project</a></li>
+                <li class="navitem"><a class="active" href="#footer">Kontak</a></li>
                 
             </ul>
             <div class="hamburger">
@@ -30,8 +31,9 @@
     <div class="halaman1">
         <div class="container1">
             <div class="content1">
-                <h1>Nama Saya</h1>
+                <h2>Nama Saya</h2>
                 <h1>ILHAM KUSUMA</h1>
+                <h2>Front End Develover & Admin Officer</h2>
             </div>
             <div class="img1">
                 <img src="img/poto profil.JPG" alt="" >
@@ -39,66 +41,76 @@
         </div>
     </div>
 
-    <div class="halaman2">
-        <h1>PROFIL SAYA</h1>
-        <div class="container2">
+    <div class="halaman2" id="halaman2">
+        <h1 class="heading2">PROFIL SAYA</h1>
+        <div class="container2"  data-aos="fade-up">
             <div class="img2">
                 <img src="img/poto profil.JPG" alt="">
             </div>
             <div class="content2">
                 <h1>Ilham kusuma</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates cum nisi architecto qui nemo quae saepe sed itaque, asperiores at veniam quisquam eveniet molestiae impedit tempora, iusto, provident explicabo nobis.</p>
-                
+                <p>Saya adalah freshgraduted dari SMKN 1 LEMAHABANG Kabupaten Cirebon dan lulus pada tahun 2022 dengan jurusan Teknik Komputer dan Jaringan. Saya adalah orang yang sangat tertarik dalam bidang IT, mulai dari Frontend, UI/UX Deisgn, Mikrotik dan CyberSecurity Analyst. Dengan ilmu yang saya dapatkan saya berharap dapat membagikan ilmu saya ke masyarakat agar Indonesia lebih maju dalam bidang teknologi. </p>
+                <P><br/> Saya memiliki soft skill public speaking, Time management, Criticall Thingking dan Leadership. Saya merupakan orang yang disiplin dan fokus dalam menjalani pekerjaan. Sehingga saya terus berusaha untuk mengerjakan sesuatu dan mencapai tujuan dengan cara yang tepat.</P>
             </div>
             
         </div>
     </div>
 
-    <div class="halaman3">
-        <h1>MY Project</h1>
-        <div class="container3">
+    <div class="halaman3" id="halaman3">
+        <h1 class="judulhal3">MY Project</h1>
+        <div class="container3" data-aos="fade-right">
             <div class="img3">
                 <img src="img/Group 1097.png" alt="">
             </div>
             <div class="content3">
                 <h1>INOTAL</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellendus, dicta eligendi aliquid quisquam veniam, magni magnam nobis a voluptas sint expedita libero beatae facere necessitatibus explicabo labore quaerat voluptates.</p>
-                <a href="">lihat Project</a>
+                <p>Insight Owl Digital Merupakan layanan perpustakaan digital. Kami hadir untuk memudahkan pengelolaan perpustakaan digital Anda. </p>
+                <a href="https://kusumailham2004.github.io/inotal/inotal-main/" target="_blank" rel="noopener noreferrer">lihat Project</a>
             </div>
         </div>
     </div>
 
 
     <div class="halaman4">
-        <div class="container4">
+        <div class="container4" data-aos="fade-left">
             <div class="content4">
-                <h1>INOTAL</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellendus, dicta eligendi aliquid quisquam veniam, magni magnam nobis a voluptas sint expedita libero beatae facere necessitatibus explicabo labore quaerat voluptates.</p>
-                <a href="">lihat Project</a>
+                <h1>MyCirebonFood</h1>
+                <p>MyCirebonFood  merupakan salah satu 
+                    website yang menghadirkan berbagai rekomendasi
+                     kuliner yang ada di Crebon. Karena jika anda adalah 
+                    wisatawan dari luar kota, maka anda tidak perlu 
+                    susah-susah untuk mencari kuliner khas cirebon. </p>
+                <a href="https://kusumailham2004.github.io/mycirebonfood/" target="_blank" rel="noopener noreferrer">lihat Project</a>
             </div>
             <div class="img4">
-                <img src="img/Group 1097.png" alt="">
+                <img src="img/Desktop - 16.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="halaman5">
-        <div class="container5">
-            <div class="content5">
-                <h1>INOTAL</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, repellendus, dicta eligendi aliquid quisquam veniam, magni magnam nobis a voluptas sint expedita libero beatae facere necessitatibus explicabo labore quaerat voluptates.</p>
-                <a href="">lihat Project</a>
-            </div>
+        <div class="container5" data-aos="fade-right">
             <div class="img5">
-                <img src="img/Group 1097.png" alt="">
+                <img src="img/cyber-security.png" alt="">
+            </div>
+            <div class="content5">
+                <h1>Mini SOC Project Bootcamp CyberSecurity</h1>
+                <p>Project ini digunakan untuk mengikuti Final Project Cyberwarrior dari Infra Digital Foundation dan SGI-Asia. 
+                    Pembuatan lab ini bertujuan untuk memonitoring sebuah server dari seranganserangan oleh atacker. Dengan menggunakan SIEM atau security information and
+                    event management dalam hal ini kami menggunakan wazuh. Kami dapat mendeteksi
+                    beberapa serangan dengan memunculkan alert atau peringatan dari wazuh. Sehingga
+                    kami tahu bahwa serangan sedang atau telah terjadi.</p>
+                <a href="https://drive.google.com/file/d/1z5r_3CU4ZrZ3N0B6uqcKnQQC6NQHttEf/view" target="_blank" rel="noopener noreferrer">lihat Project</a>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="containerfooter">
-            <h1>ILHAM KUSUMA</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempora suscipit beatae blanditiis voluptatem natus, voluptates cumque ipsa assumenda molestias error eum libero animi magni ratione inventore sapiente adipisci ab!</p>
+    <footer id="footer">
+        <div class="containerfooter" data-aos="fade-up">
+            <div class="contentfooter">
+                <h1>ILHAM KUSUMA</h1>
+                <p>Saya adalah freshgraduted dari SMKN 1 LEMAHABANG Kabupaten Cirebon dan lulus pada tahun 2022 dengan jurusan Teknik Komputer dan Jaringan. Saya adalah orang yang sangat tertarik dalam bidang IT, mulai dari Frontend, UI/UX Deisgn, Mikrotik dan CyberSecurity Analyst. Dengan ilmu yang saya dapatkan saya berharap dapat membagikan ilmu saya ke masyarakat agar Indonesia lebih maju dalam bidang teknologi.</p>
+            </div>
             <div class="medsos">
                 <a href="https://" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
@@ -113,5 +125,9 @@
     
 
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

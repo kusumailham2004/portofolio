@@ -1,19 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* font-family: 'Merriweather', serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Caveat', cursive; */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 
 /* header start */
 header{
-    background-color: #E8FFC2;
     position: sticky;
     top: 0px;
     z-index: 9999;
     width: 100%;
+    background-color: #06283D;
 }
 header nav ul li{
     list-style: none;
@@ -29,9 +36,6 @@ header nav{
     justify-content: space-around;
     align-items: center;
     padding: 0 24px;
-    background: rgba(232, 255, 194, 0.47);
-    backdrop-filter: blur(6.1px);
-    -webkit-backdrop-filter: blur(6.1px);
 }
 .navmenu{
     width: 50%;
@@ -39,6 +43,13 @@ header nav{
     justify-content: space-around;
     right: 0;
     gap: 10px;
+}
+.headingnav{
+    font-family: 'Caveat', cursive;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 30px;
+    cursor: pointer;
 }
 .navitem{
     font-size: 1rem;
@@ -168,7 +179,7 @@ header nav .navmenu .navitem .active:hover{
     .navmenu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 45px;
         gap: 0;
         flex-direction: column;
         margin-top: 3%;
@@ -201,6 +212,8 @@ header nav .navmenu .navitem .active:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #06283D;
 }
 
 .halaman1 .container1{
@@ -210,9 +223,22 @@ header nav .navmenu .navitem .active:hover{
     width: 90%;
     gap: 10%;
 }
+.halaman1 .container1 .content1{
+    color: white;
+}
+.halaman1 .container1 .content1 h1{
+    text-shadow: rgba(255,162,0,1) 0px 0px 35px;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.halaman1 .container1 .content1 h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
 .halaman1 .container1 .img1 img{
     width: 400px;
     border-radius: 10%;
+    box-shadow: rgba(255,162,0,1) 0px 0px 50px;
 }
 @media screen and (max-width:768px) {
     .halaman1 .container1{
@@ -221,16 +247,38 @@ header nav .navmenu .navitem .active:hover{
     .halaman1 .container1 .img1 img{
         margin-top: 5%;
     }
+    .halaman1{
+        height: auto;
+        padding-bottom: 50px;
+        padding-top: 70px;
+    }
+}
+@media screen and (max-width:576px){
+    .halaman1 .container1 .img1 img{
+        width: 250px;
+        margin-top: 30px;
+    }
+    .halaman1 .container1 .content1 h1{
+        font-size: 30px;
+    }
+    .halaman1 .container1 .content1 h2{
+        font-size: 20px;
+    }
 }
 
 
 .halaman2{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.halaman2 .heading2{
+    margin-bottom: 30px;
 }
 .halaman2 .container2{
     display: flex;
@@ -238,6 +286,20 @@ header nav .navmenu .navitem .active:hover{
     align-items: stretch;
     flex-direction: column;
     width: 90%;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    
+
+    background: rgba(19, 99, 223, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(19, 99, 223, 0.2);
+}
+.halaman2 .container2 .content2{
+    width: 100%;
 }
 .halaman2 .container2 .img2{
     display: flex;
@@ -245,7 +307,7 @@ header nav .navmenu .navitem .active:hover{
     align-items: center;
 }
 .halaman2 .container2 .img2 img{
-    width: 300px;
+    width: 200px;
 }
 .halaman2 .container2 .content2 h1{
     text-align: center;
@@ -257,13 +319,24 @@ header nav .navmenu .navitem .active:hover{
 }
 
 
+
 .halaman3{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    background-color: #06283D;
+
+    color: white;
+    overflow: hidden;
+}
+.halaman3 .judulhal3{
+    margin-bottom: 40px;
 }
 .halaman3 .container3{
     display: flex;
@@ -283,7 +356,103 @@ header nav .navmenu .navitem .active:hover{
     align-items: center;
     flex-direction: column;
 }
+.halaman3 .container3 .content3 h1{
+    margin-top: 30px;
+}
+.halaman3 .container3 .content3 p{
+    margin-top: 30px;
+}
 .halaman3 .container3 .content3 a{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    background-color: #08fc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+}
+.halaman3 .container3 .content3 a:hover{
+    background-color: #06b800;
+}
+@media screen and (max-width:768px){
+    .halaman3 .container3{
+        flex-direction: column;
+    }
+    .halaman3 .container3 .img3 img{
+        width: 300px;
+    }
+    .halaman3{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .halaman3 .container3 .content3{
+        width: 90%;
+    }
+}
+
+.halaman4{
+    width: 100%;
+    height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #1363DF;
+    color: white;
+    overflow: hidden;
+}
+.halaman4 .container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 7%;
+}
+.halaman4 .container4 .content4{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.halaman4 .container4 .content4 h1{
+    margin-top: 30px;
+}
+.halaman4 .container4 .content4 p{
+    margin-top: 30px;
+}
+.halaman4 .container4 .content4 h1{
+    text-align: center;
+}
+.halaman4 .container4 .content4 a{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    background-color: #08fc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+}
+.halaman4 .container4 .content4 a:hover{
+    background-color: #06b800;
+}
+.halaman4 .container4 .content4 a{
     margin-top: 10px;
     text-align: center;
     width: 150px;
@@ -293,35 +462,39 @@ header nav .navmenu .navitem .active:hover{
     align-items: center;
     justify-content: center;
 }
-
-
-.halaman4{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.halaman4 .container4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    gap: 7%;
-}
 .halaman4 .container4 .img4 img{
     width: 550px;
+}
+@media screen and (max-width:768px){
+    .halaman4 .container4{
+        flex-direction: column-reverse;
+    }
+    .halaman4 .container4 .img4 img{
+        width: 300px;
+    }
+    .halaman4{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .halaman4 .container4 .content4{
+        width: 90%;
+    }
 }
 
 
 .halaman5{
     width: 100%;
     height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    background-color: #47B5FF;
+    overflow: hidden;
 }
 .halaman5 .container5{
     display: flex;
@@ -330,16 +503,68 @@ header nav .navmenu .navitem .active:hover{
     width: 90%;
     gap: 7%;
 }
-.halaman5 .container5 .img5 img{
-    width: 550px;
-}
-
-footer{
-    width: 100%;
-    height: 40vh;
+.halaman5 .container5 .content5{
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.halaman5 .container5 .content5 h1{
+    margin-top: 30px;
+}
+.halaman5 .container5 .content5 p{
+    margin-top: 30px;
+}
+.halaman5 .container5 .content5 a{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    background-color: #08fc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+}
+.halaman5 .container5 .content5 a:hover{
+    background-color: #06b800;
+}
+.halaman5 .container5 .img5 img{
+    width: 400px;
+}
+@media screen and (max-width:768px){
+    .halaman5 .container5{
+        flex-direction: column;
+    }
+    .halaman5 .container5 .img5 img{
+        width: 300px;
+    }
+    .halaman5{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .halaman5 .container5 .content5{
+        width: 90%;
+    }
+}
+
+
+
+footer{
+    width: 100%;
+    height: 60vh;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #06283D;
 }
 footer .containerfooter{
     display: flex;
@@ -347,6 +572,12 @@ footer .containerfooter{
     align-items: center;
     flex-direction: column;
     width: 50%;
+}
+footer .containerfooter .contentfooter{
+    color: white;
+}
+footer .containerfooter .contentfooter h1{
+    text-align: center;
 }
 footer .containerfooter .medsos{
     margin-top: 30px;
@@ -356,10 +587,24 @@ footer .containerfooter .medsos{
     align-items: center;
 }
 footer .containerfooter .medsos a{
-    margin: 1%;
+    margin: 2%;
     font-size: 20px;
+    font-weight: 200;
     background-color: #08fc00;
     padding: 10px;
     border-radius: 50%;
     color: white;
+}
+footer .containerfooter .medsos a:hover{
+    background-color: #069101;
+}
+@media screen and (max-width:768px){
+    footer{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    footer .containerfooter{
+        width: 90%;
+    }
 }
