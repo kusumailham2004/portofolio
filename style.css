@@ -70,7 +70,7 @@ header nav .navmenu .navitem .active{
 .navlink{
     font-family: 'Noto Sans Display', sans-serif;
     transition: 0.5s ease;
-    width: 90%;
+    width: 70%;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -78,13 +78,13 @@ header nav .navmenu .navitem .active{
     border-radius: 5px;
 }
 .navlink:hover{
-    background-color: #2FA4FF;
+    border: 1px solid aqua;
 }
 header nav .navmenu .navitem .active{
     font-family: 'Noto Sans Display', sans-serif;
     transition: 0.5s ease;
     background-color: #2FA4FF;
-    width: 90%;
+    width: 70%;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -106,53 +106,8 @@ header nav .navmenu .navitem .active:hover{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #0E185F;
+    background-color: #ffffff;
     color: transparent;
-}
-.dropbtn{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    transition: 0.5s ease;
-    background: #0E185F;
-}
-
-.dropbtn:hover, .dropbtn:focus{
-    background-color: #2FA4FF;
-}
-.dropdown{
-    width: 100%;
-    font-size: 1rem;
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content{
-    display: none;
-    width: 100%;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-.dropdown-content a{
-    font-family: 'Noto Sans Display', sans-serif;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover{
-    background-color: #ddd;
-}
-.show{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 @media screen and (max-width:850px) {
     .dropbtn{
@@ -189,7 +144,7 @@ header nav .navmenu .navitem .active:hover{
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: rgba(232, 255, 194, 0.73);
+        background-color: #022a42;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10.6px);
         -webkit-backdrop-filter: blur(10.6px);
@@ -225,6 +180,7 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman1 .container1 .content1{
     color: white;
+    transform: skew(-10deg);
 }
 .halaman1 .container1 .content1 h1{
     text-shadow: rgba(255,162,0,1) 0px 0px 35px;
@@ -235,11 +191,47 @@ header nav .navmenu .navitem .active:hover{
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
+.halaman1 .container1 .img1{
+    animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
 .halaman1 .container1 .img1 img{
     width: 400px;
     border-radius: 10%;
     box-shadow: rgba(255,162,0,1) 0px 0px 50px;
+    
+
+    text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
 }
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+
+
+
 @media screen and (max-width:768px) {
     .halaman1 .container1{
         flex-direction: column;
@@ -302,18 +294,28 @@ header nav .navmenu .navitem .active:hover{
     width: 100%;
 }
 .halaman2 .container2 .img2{
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #06283D;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .halaman2 .container2 .img2 img{
     width: 200px;
+    
 }
 .halaman2 .container2 .content2 h1{
     text-align: center;
 }
 .halaman2 .container2 .content2 p{
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -347,6 +349,7 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman3 .container3 .img3 img{
     width: 550px;
+    border-radius: 10px;
 }
 .halaman3 .container3 .content3{
     width: 60%;
@@ -355,12 +358,17 @@ header nav .navmenu .navitem .active:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 10px;
+
 }
 .halaman3 .container3 .content3 h1{
     margin-top: 30px;
+    padding-left: 5px;
+    border-left: 6px solid #06b800;
 }
 .halaman3 .container3 .content3 p{
     margin-top: 30px;
+    
 }
 .halaman3 .container3 .content3 a{
     font-family: 'Merriweather', serif;
@@ -376,6 +384,7 @@ header nav .navmenu .navitem .active:hover{
     text-decoration: none;
     color: white;
     margin-top: 30px;
+    border-radius: 3px;
 }
 .halaman3 .container3 .content3 a:hover{
     background-color: #06b800;
@@ -427,6 +436,8 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman4 .container4 .content4 h1{
     margin-top: 30px;
+    padding-left: 5px;
+    border-left: 6px solid #06b800;
 }
 .halaman4 .container4 .content4 p{
     margin-top: 30px;
@@ -448,6 +459,7 @@ header nav .navmenu .navitem .active:hover{
     text-decoration: none;
     color: white;
     margin-top: 30px;
+    border-radius: 3px;
 }
 .halaman4 .container4 .content4 a:hover{
     background-color: #06b800;
@@ -464,6 +476,7 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman4 .container4 .img4 img{
     width: 550px;
+    border-radius: 10px;
 }
 @media screen and (max-width:768px){
     .halaman4 .container4{
@@ -512,6 +525,8 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman5 .container5 .content5 h1{
     margin-top: 30px;
+    padding-left: 5px;
+    border-left: 6px solid #06b800;
 }
 .halaman5 .container5 .content5 p{
     margin-top: 30px;
@@ -530,19 +545,21 @@ header nav .navmenu .navitem .active:hover{
     text-decoration: none;
     color: white;
     margin-top: 30px;
+    border-radius: 3px;
 }
 .halaman5 .container5 .content5 a:hover{
     background-color: #06b800;
 }
 .halaman5 .container5 .img5 img{
     width: 400px;
+    border-radius: 10px;
 }
 @media screen and (max-width:768px){
     .halaman5 .container5{
         flex-direction: column;
     }
     .halaman5 .container5 .img5 img{
-        width: 300px;
+        width: 200px;
     }
     .halaman5{
         height: auto;
@@ -590,13 +607,16 @@ footer .containerfooter .medsos a{
     margin: 2%;
     font-size: 20px;
     font-weight: 200;
-    background-color: #08fc00;
     padding: 10px;
     border-radius: 50%;
     color: white;
+    border: 1px solid white;
+    box-shadow: 13px 15px 25px 15px rgba(35, 255, 255, 0.1);
 }
 footer .containerfooter .medsos a:hover{
-    background-color: #069101;
+    background-color: none;
+    border: 1px solid aqua;
+    
 }
 @media screen and (max-width:768px){
     footer{
