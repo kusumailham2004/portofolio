@@ -180,7 +180,7 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman1 .container1 .content1{
     color: white;
-    transform: skew(-10deg);
+    transform: skew(-13deg);
 }
 .halaman1 .container1 .content1 h1{
     text-shadow: rgba(255,162,0,1) 0px 0px 35px;
